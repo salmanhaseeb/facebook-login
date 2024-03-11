@@ -99,6 +99,8 @@ GEM
     erubi (1.12.0)
     faraday (2.9.0)
       faraday-net_http (>= 2.0, < 3.2)
+    faraday-multipart (1.0.4)
+      multipart-post (~> 2)
     faraday-net_http (3.1.0)
       net-http
     globalid (1.2.1)
@@ -117,8 +119,15 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    json (2.7.1)
     jwt (2.8.1)
       base64
+    koala (3.5.0)
+      addressable
+      faraday
+      faraday-multipart
+      json (>= 1.8)
+      rexml
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -134,6 +143,7 @@ GEM
     minitest (5.22.2)
     msgpack (1.7.2)
     multi_xml (0.6.0)
+    multipart-post (2.4.0)
     net-http (0.4.1)
       uri
     net-imap (0.4.10)
@@ -275,6 +285,7 @@ DEPENDENCIES
   devise (~> 4.9)
   importmap-rails
   jbuilder
+  koala
   omniauth-facebook
   omniauth-rails_csrf_protection
   puma (~> 5.0)
